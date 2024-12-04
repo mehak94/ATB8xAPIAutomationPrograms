@@ -1,4 +1,4 @@
-package org.theAPITesting;
+package org.theAPITesting27112024;
 import io.restassured.RestAssured;
 public class Lab002usingRestAssured {
     public static void main(String[] args) {
