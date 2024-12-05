@@ -1,4 +1,4 @@
-package org.theAPITesting29112024;
+package org.theAPITesting29112024.GET;
 
 import io.restassured.RestAssured;
 import org.testng.annotations.Test;
@@ -35,5 +35,12 @@ public class BDDStyleGET {
                 .log().all()
                 .statusCode(200);
     }
+
+
+
+
+
+
     }
+
 
