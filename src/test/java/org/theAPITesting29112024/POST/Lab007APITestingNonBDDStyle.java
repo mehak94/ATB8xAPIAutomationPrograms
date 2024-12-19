@@ -11,7 +11,7 @@ import static io.restassured.RestAssured.given;
 public class Lab007APITestingNonBDDStyle {
     @Description("Verify the POST  Request - BDD Syle")
     @Test
-    public void test_post_BDDStyle(){
+    public void test_post_NonBDDStyle(){
         String payload = "{\n"+ "\"username\" : \"admin\", \n " + "\"password\" : \"password123\"\n" + "}";
         RequestSpecification r = RestAssured.given();
         r.baseUri("https://restful-booker.herokuapp.com");
