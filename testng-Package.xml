@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/risha/IdeaProjects/ATB8xAPIAutomationPrograms">
+       <parameter name="browser" value="firefox"></parameter>
+
+<packages>
+    <package name = "org.theTestNG_Examples04122024"/>
+</packages>
+
+        <classes>
+
+
+        </classes>
+    </test>
+</suite>
+
