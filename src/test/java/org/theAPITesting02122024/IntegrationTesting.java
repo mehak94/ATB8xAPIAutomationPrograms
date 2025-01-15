@@ -9,6 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static javax.swing.UIManager.getString;
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class IntegrationTesting {
 
@@ -39,6 +40,8 @@ public class IntegrationTesting {
 // To extract the token
         token = response.jsonPath().getString("token");// x.token, x.bookingId, x.booking.firstname
         System.out.println(token);
+        // So, we can add assertions in it also.
+        assertThat(token).isAlphanumeric().isNotNull().isNotBlank().isNotEmpty();
         return token;
     }
 public String getBookingId(){ // after creating booking we will have booking id which we need to give PUT request
@@ -66,6 +69,8 @@ public String getBookingId(){ // after creating booking we will have booking id 
     System.out.println("===============");
     System.out.println(bookingId);
     System.out.println("?????????????");
+
+    assertThat(bookingId).isNotBlank().isNotEmpty().isNotNull();
     return bookingId;
 }
 

@@ -19,4 +19,4 @@ public class TestNG_Enabled {
     public void test03() {
         System.out.println(3);
         Assert.assertTrue(true);
-    }}
+    }}// If we want to run package then mention the name of package in xml instaed of class
